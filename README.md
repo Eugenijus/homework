@@ -26,7 +26,7 @@ Optional tasks
 
 References
 ==============
-- It is recommended to use 'Groovy/Grails Tool Suite' (http://spring.io/tools/ggts) as your IDE
+- It is recommended to use 'Groovy/Grails Tool Suite' (http://spring.io/tools/ggts) as your IDE. I used ggts-351
 - The client-side framework is ExtJS 3.4. The documentation can be found at http://docs.sencha.com/extjs/3.4.0/
 - The server-side is coded using Grails 2.3.8. The documentation can be found at http://grails.org/doc/2.3.x/
 
