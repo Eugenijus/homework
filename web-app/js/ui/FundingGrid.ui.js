@@ -14,7 +14,7 @@ FundingGridUi = Ext.extend(Ext.grid.EditorGridPanel, {
                     xtype: 'button',
                     ref: 'addButton',
                     iconCls: 'add-button-icon',
-                    text: 'New Agreement'
+                    text: 'New Funding'
                 },
                 {
                     xtype: 'button',

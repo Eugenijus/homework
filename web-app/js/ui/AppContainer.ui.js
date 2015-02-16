@@ -26,7 +26,8 @@ AppContainerUi = Ext.extend(Ext.Viewport, {
             */
             {
                 xtype: 'fundinggrid',
-                ref: 'fundingGrid'
+                ref: 'fundingGrid',
+                title: 'Fundings'
             }
             
         ];
