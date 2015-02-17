@@ -20,9 +20,9 @@ Requirements for implementation
 
 Optional tasks
 ==============
-- When Agreement Grid loads, select first row in this grid, and load fundings for it.
-- Add ExtJs Load Mask functionality on Load and Save events for both grids.
-- Add filtering to the columns of the Agreements grid.
+- O1. When Agreement Grid loads, select first row in this grid, and load fundings for it.
+- O2. Add ExtJs Load Mask functionality on Load and Save events for both grids.
+- O3. Add filtering to the columns of the Agreements grid.
 
 References
 ==============
