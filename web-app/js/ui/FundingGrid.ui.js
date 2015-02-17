@@ -88,6 +88,17 @@ FundingGridUi = Ext.extend(Ext.grid.EditorGridPanel, {
                     format: 'Y-m-d'
                     */
                 }
+            },
+            {
+                xtype: 'gridcolumn',
+                id: 'agreementNumber',
+                dataIndex: 'agreementNumber',
+                header: 'Agreement Number',
+                sortable: true,
+                width: 120,
+                editor: {
+                    xtype: 'numberfield'
+                }
             }
         ];
         

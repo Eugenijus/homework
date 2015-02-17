@@ -11,19 +11,9 @@ AppContainerUi = Ext.extend(Ext.Viewport, {
                 xtype: 'agreementgrid',
                 ref: 'agreementGrid',
                 title: 'Agreements',
-                height: 200
+                /* removing height to meet R1. */
+                /* height: 200*/
             },
-            /*
-            {
-                title: 'Panel',
-                html: 'Just a simple panel'
-            }
-            ,
-            {
-                title: 'Panel2',
-                html: 'Just a simple panel2'
-            },
-            */
             {
                 xtype: 'fundinggrid',
                 ref: 'fundingGrid',

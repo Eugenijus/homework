@@ -11,6 +11,8 @@ class Agreement {
     BigDecimal totalAmount
     BigDecimal totalAppliedFunds
     String currency
+	
+	static hasMany = [fundings:Funding]
 
     static constraints = {
         agreementNumber unique: true
@@ -32,4 +34,5 @@ class Agreement {
             currency: this.currency
         ]
     }
+	
 }

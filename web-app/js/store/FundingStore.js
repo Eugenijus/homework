@@ -40,8 +40,11 @@ FundingStore = Ext.extend(Ext.data.JsonStore, {
             {
                 name : 'startDate',
                 type : 'string'
-            }
-            
+            },
+            {
+                name : 'agreementNumber',
+                type : 'number'
+            }            
             ],
             writer: new Ext.data.JsonWriter()
         }, cfg));

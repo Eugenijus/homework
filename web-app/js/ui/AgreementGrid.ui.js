@@ -46,7 +46,7 @@ AgreementGridUi = Ext.extend(Ext.grid.EditorGridPanel, {
                 dataIndex: 'agreementNumber',
                 header: 'Agreement Number',
                 sortable: true,
-                width: 100,
+                width: 120,
                 editor: {
                     xtype: 'numberfield'
                 }
@@ -68,7 +68,7 @@ AgreementGridUi = Ext.extend(Ext.grid.EditorGridPanel, {
                 dataIndex: 'unallocatedAmount',
                 header: 'Unallocated Amount',
                 sortable: true,
-                width: 100
+                width: 120
             },
             {
                 xtype: 'gridcolumn',
@@ -76,7 +76,7 @@ AgreementGridUi = Ext.extend(Ext.grid.EditorGridPanel, {
                 dataIndex: 'totalAmount',
                 header: 'Total Amount',
                 sortable: true,
-                width: 100,
+                width: 80,
                 editor: {
                     xtype: 'numberfield'
                 }
@@ -87,7 +87,8 @@ AgreementGridUi = Ext.extend(Ext.grid.EditorGridPanel, {
                 dataIndex: 'totalAppliedFunds',
                 header: 'Total Applied Funds',
                 sortable: true,
-                width: 200,
+                width: 150,
+                /* R5. TODO numberfield should be removed, so it is not possible to edit this cell after implementing R5 */
                 editor: {
                     xtype: 'numberfield'
                 }

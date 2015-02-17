@@ -2,9 +2,12 @@ package tieto.homework
 
 import java.util.Map;
 
-/** 
- * Funding Grid should contain columns: purpose, amount, funding start date. All of these are set manually. 
+import groovy.transform.ToString
+
+/**
+ * R3.: Funding Grid should contain columns: purpose, amount, funding start date. All of these are set manually.
  */
+@ToString
 class Funding {
 	
 	Integer fundingNumber
@@ -12,7 +15,9 @@ class Funding {
 	BigDecimal amount
 	String startDate
 	//Date startDate
-		
+	
+	static belongsTo = [agreement:Agreement]
+	
     static constraints = {
 		fundingNumber unique: true
 		purpose nullable: false, blank: false
@@ -22,10 +27,12 @@ class Funding {
 	
 	public Map toJsonMap() {
 		[
+			id: this.id,
 			fundingNumber: this.fundingNumber,
 			purpose: this.purpose,
 			amount: this.amount,
-			startDate: this.startDate
+			startDate: this.startDate,
+			agreementNumber: this.agreement.agreementNumber
 		]
 	}
 }

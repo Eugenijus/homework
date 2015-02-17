@@ -13,14 +13,17 @@ FundingGrid = Ext.extend(FundingGridUi, {
         this.on('afteredit', this.onGridAfterEdit, this);
     },
 
+    /* R4. It should be possible to do CRUD operations on Funding Grid */
+    
     onAddFundingClick: function() {
     	var today = new Date()
 		var record = new this.store.recordType({
             fundingNumber: null,
             pupose: null,
             amount: 0,
-            startDate: today.format('Y-m-d')
-            //startDate: '2015-02-15'
+            startDate: today.format('Y-m-d'),
+            /* startDate: '2015-02-15' */
+            agreementNumber: null            
         });
         
         this.store.add(record);
@@ -60,6 +63,12 @@ FundingGrid = Ext.extend(FundingGridUi, {
                 return r.get('startDate') != null;
             }
         );
+        
+		this.validate({startDate: Ext.util.constants.VALIDATION_MESSAGES.FIELD_IS_MANDATORY},
+		        function(r) {
+		            return r.get('agreementNumber') != null;
+		    }
+		);
         
         return this.store.find(Ext.util.constants.FIELDS.STATUS, Ext.util.constants.RECORD_STATUS.ERROR) == -1;
     },
