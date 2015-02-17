@@ -10,21 +10,12 @@ The provided implementation is a functional prototype which imitates a business 
 
 Requirements for implementation
 ==============
-<<<<<<< HEAD
 - R1. ~~Create Funding Grid below the Agreements Grid, so that each grid would take half of the browser's window.~~
 - R2. Funding Grid should load data when agreement line is selected
 - R3. ~~Funding Grid should contain columns: purpose, amount, funding start date. All of these are set manually.~~
 - R4. ~~It should be possible to do CRUD operations on Funding Grid~~
 - R5. Total applied funds (Agreement.totalAppliedFunds) column in agreements grid should no longer be editable
 - R6. The sum of Funding Grid amount lines should be show in total applied funds column in Agreements Grid (Agreement.totalAppliedFunds).
-=======
-- R1. Create Funding Grid below the Agreements Grid, so that each grid would take half of the browser's window.
-- R2. Funding Grid should load data when agreement line is selected
-- R3. Funding Grid should contain columns: purpose, amount, funding start date. All of these are set manually.
-- R4. It should be possible to do CRUD operations on Funding Grid
-- R5. Total applied funds column in agreements grid should no longer be editable
-- R6. The sum of Funding Grid amount lines should be show in total applied funds column in Agreements Grid.
->>>>>>> 4f8de8d31c0428241d6331537835ffc881c62328
 - R7. If user tries to save total applied funds which exceed total amount, show a message box informing the user that such action is not allowed, and prohibit him from saving any data.
 
 Optional tasks
