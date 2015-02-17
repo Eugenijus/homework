@@ -10,13 +10,13 @@ The provided implementation is a functional prototype which imitates a business 
 
 Requirements for implementation
 ==============
-- Create Funding Grid below the Agreements Grid, so that each grid would take half of the browser's window.
-- Funding Grid should load data when agreement line is selected
-- Funding Grid should contain columns: purpose, amount, funding start date. All of these are set manually.
-- It should be possible to do CRUD operations on Funding Grid
-- Total applied funds column in agreements grid should no longer be editable
-- The sum of Funding Grid amount lines should be show in total applied funds column in Agreements Grid.
-- If user tries to save total applied funds which exceed total amount, show a message box informing the user that such action is not allowed, and prohibit him from saving any data.
+- R1. Create Funding Grid below the Agreements Grid, so that each grid would take half of the browser's window.
+- R2. Funding Grid should load data when agreement line is selected
+- R3. Funding Grid should contain columns: purpose, amount, funding start date. All of these are set manually.
+- R4. It should be possible to do CRUD operations on Funding Grid
+- R5. Total applied funds column in agreements grid should no longer be editable
+- R6. The sum of Funding Grid amount lines should be show in total applied funds column in Agreements Grid.
+- R7. If user tries to save total applied funds which exceed total amount, show a message box informing the user that such action is not allowed, and prohibit him from saving any data.
 
 Optional tasks
 ==============
@@ -26,7 +26,7 @@ Optional tasks
 
 References
 ==============
-- It is recommended to use 'Groovy/Grails Tool Suite' (http://spring.io/tools/ggts) as your IDE. I used ggts-351
+- It is recommended to use 'Groovy/Grails Tool Suite' (http://spring.io/tools/ggts) as your IDE. I used ggts-351: http://download.springsource.com/release/STS/3.5.1/dist/e4.4/groovy-grails-tool-suite-3.5.1.RELEASE-e4.4-win32.zip
 - The client-side framework is ExtJS 3.4. The documentation can be found at http://docs.sencha.com/extjs/3.4.0/
 - The server-side is coded using Grails 2.3.8. The documentation can be found at http://grails.org/doc/2.3.x/
 
