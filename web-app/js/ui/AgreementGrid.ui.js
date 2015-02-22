@@ -2,10 +2,7 @@ AgreementGridUi = Ext.extend(Ext.grid.EditorGridPanel, {
     store: 'AgreementStore',
     flex: 1,
     
-    initComponent: function() {
-        this.selModel = new Ext.grid.RowSelectionModel({
-            singleSelect: true
-        });
+    initComponent: function() {       
         
         this.tbar = {
             xtype: 'toolbar',

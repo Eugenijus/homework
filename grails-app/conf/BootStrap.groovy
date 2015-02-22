@@ -19,7 +19,6 @@ class BootStrap {
 			amount: 200,
 			startDate: new Date()
 		)
-		//f1.addToAgreement(a1)
 		f1.save()
 		
 		Funding f2 = new Funding(
@@ -28,7 +27,6 @@ class BootStrap {
 			amount: 240,
 			startDate: new Date()
 		)
-		//f2.addToAgreement(a2)
 		f2.save()
 		
 		Agreement a1 = new Agreement(

@@ -11,8 +11,30 @@ AgreementGrid = Ext.extend(AgreementGridUi, {
         this.store.on('exception', this.onStoreSaveException, this);
         this.on('cellclick', this.onCellClick, this);
         this.on('afteredit', this.onGridAfterEdit, this);
+        
+        this.selModel = new Ext.grid.RowSelectionModel({
+            singleSelect: true,
+            listeners: {
+                rowselect: function(sm, row, rec) {
+                    console.log('rowselect + ' + row);
+                }
+            }
+        });
+        
+        //
     },
-
+    
+    listeners: {
+    	afterrender: function(g) {
+    		console.log('afterrender + ' + g.getSelectionModel().singleSelect);
+    		var current_grid = g
+    		this.on('load', function(){
+    			current_grid.getSelectionModel().selectRow(0);
+    		})
+        } // Allow rows to be rendered.
+    	
+    },
+    
     onAddAgreementClick: function() {
         var record = new this.store.recordType({
             agreementNumber: null,
@@ -106,5 +128,6 @@ AgreementGrid = Ext.extend(AgreementGridUi, {
                 break;
         }
     }
+    
 });
 Ext.reg('agreementgrid', AgreementGrid);
